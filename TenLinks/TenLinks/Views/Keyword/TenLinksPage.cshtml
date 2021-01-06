@@ -1,0 +1,17 @@
+﻿<table class="table" border="1" data-toggle="table" data-search="false" data-virtual-scroll="true">
+<thead>
+    <tr>
+        <th data-wrap="true" width="120">Ссылка</th>
+        <th>Краткое писание</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach (Link keyword in ViewBag.Links)
+    {
+        <tr>
+            <td>@keyword.Adress</td>
+            <td>@keyword.Description</td>
+        </tr>
+    }
+</tbody>
+</table>
